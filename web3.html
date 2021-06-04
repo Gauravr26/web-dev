@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Input tag</title>
+        <style>
+            marquee{
+                color:deepskyblue;
+                font-size: 50px; 
+                font-family: Arial, Helvetica, sans-serif;
+                font-style: italic;
+            }
+            label{
+                color: firebrick;
+            }
+            img{
+                width: 200px;
+                display: block;
+                margin-left: auto;
+                margin-right: auto;
+                border: gold;
+                border-style:inset;
+                border-width: 20px;
+                border-radius: 50%;
+            }
+            body{
+                background: linear-gradient(gray,pink);
+            }
+        </style>
+    </head>
+    <body>
+        <marquee direction="left">My Webpage</marquee>
+       <form action="mailto:someone@something.com" method="POST">
+         <br>
+        <input type="text" name="First name" placeholder="First name" required >
+        <input type="text" name="Surname" placeholder="Surname" required >
+        <br><br>
+        <input type="email" name="Mobile number or email address" placeholder="Mobile number or email address" size="30" required >
+         <br>
+        <input type="radio" name="gender" value="male" id="gender-m">
+        <label for="gender-m">Male</label>
+        <input type="radio" name="gender" value="female" id="gender-f">
+        <label for="gender-f">Female</label>
+        <br><br>
+        Skills: <br>
+        <input type="checkbox" name="skills" value="HTML" id="skill1">
+        <label for="skill1">HTML</label>
+        <input type="checkbox" name="skills" value="CSS" id="skill2">
+        <label for="skill2">CSS</label>
+        <br><br>
+        <input type="submit" name="Submit" value="Submit">
+        <input type="reset" value="reset">
+        <br><br>
+        List of Courses:
+        <select name="List of Courses" id="">
+            <option selected>--Select a course--</option>
+            <option >Web development</option>
+            <option>Android development</option>
+            <option>Machine Learning</option>
+            <option>Artificial Intelligence</option>
+        </select>
+       </form>
+       <br><br>
+       <img src="https://i.pinimg.com/originals/01/e8/aa/01e8aa52b1fed0eaa3840d105c328fed.jpg">
+    </body>
+</html>
